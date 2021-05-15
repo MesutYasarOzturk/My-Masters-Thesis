@@ -112,11 +112,11 @@ plt.legend()
 
 #Deternine optimal values for p,q minimizing AIC; let the algorithm decide d. Use ADF test.
 model_autoARIMA = auto_arima(train_data, start_p=0, start_q=0,
-                      test='adf',       # use adftest to find  optimal 'd'
-                      max_p=10, max_q=10, # maximum p and q
-                      m=1,              # frequency of series
-                      d=None,           # let model determine 'd'
-                      seasonal=False,   # No Seasonality
+                      test='adf',       
+                      max_p=10, max_q=10, 
+                      m=1,             
+                      d=None,           
+                      seasonal=False,  
                       start_P=0, 
                       D=0, 
                       trace=True,
