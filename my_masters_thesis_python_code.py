@@ -110,7 +110,7 @@ plt.plot(df_log, 'blue', label='Train data')
 plt.plot(test_data, 'red', label='Test data')
 plt.legend()
 
-#Deternine optimal values for p,q minimizing AIC; let the algorithm decide d. Use ADF test.
+#Determine optimal values for p,q minimizing AIC; let the algorithm decide d. Use ADF test.
 model_autoARIMA = auto_arima(train_data, start_p=0, start_q=0,
                       test='adf',       
                       max_p=10, max_q=10, 
